@@ -1,4 +1,4 @@
-# browser-resolve-sync [![Build Status](https://travis-ci.org/fgnass/browser-resolve-sync.png?branch=master)](https://travis-ci.org/fgnass/browser-resolve-sync)
+# browser-resolve-sync [![Build Status](https://travis-ci.org/fgnass/browser-resolve-sync.png)](https://travis-ci.org/fgnass/browser-resolve-sync)
 
 Node.js resolve algorithm with [browser](https://gist.github.com/defunctzombie/4339901) field support.
 
