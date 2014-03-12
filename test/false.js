@@ -4,21 +4,14 @@ var resolve = require('../');
 
 var fixtures_dir = __dirname + '/fixtures';
 
-test('false file', function(done) {
+test('false file', function() {
     var parent_file = fixtures_dir + '/node_modules/false/index.js';
-    resolve('./fake.js', { filename: parent_file }, function(err, p) {
-        assert.ifError(err);
-        assert.equal(p, path.normalize(__dirname + '/../empty.js'));
-        done();
-    });
+    var p = resolve('./fake.js', { filename: parent_file });
+    assert.equal(p, path.normalize(__dirname + '/../empty.js'));
 });
 
-test('false module', function(done) {
+test('false module', function() {
     var parent_file = fixtures_dir + '/node_modules/false/index.js';
-    resolve('ignore-me', { filename: parent_file }, function(err, p) {
-        assert.ifError(err);
-        assert.equal(p, path.normalize(__dirname + '/../empty.js'));
-        done();
-    });
+    var p = resolve('ignore-me', { filename: parent_file });
+    assert.equal(p, path.normalize(__dirname + '/../empty.js'));
 });
-

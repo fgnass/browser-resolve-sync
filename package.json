@@ -1,20 +1,20 @@
 {
-  "name": "browser-resolve",
-  "version": "1.2.2",
-  "description": "resolve which handles browser field support in package.json",
+  "name": "browser-resolve-sync",
+  "version": "1.0.0",
+  "description": "synchronous resolve algorithm with browser field support",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/shtylman/node-browser-resolve.git"
+    "url": "git://github.com/fgnass/browser-resolve-sync.git"
   },
   "keywords": [
     "resolve",
     "browser"
   ],
-  "author": "Roman Shtylman <shtylman@gmail.com>",
+  "author": "Felix Gnass <fgnass@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "resolve": "0.6.1"

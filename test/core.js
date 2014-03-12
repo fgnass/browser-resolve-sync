@@ -6,19 +6,12 @@ var shims = {
     events: 'foo'
 };
 
-test('shim found', function(done) {
-    resolve('events', { modules: shims }, function(err, path) {
-        assert.ifError(err);
-        assert.equal(path, 'foo');
-        done();
-    });
+test('shim found', function() {
+    var path = resolve('events', { modules: shims });
+    assert.equal(path, 'foo');
 });
 
-test('core shim not found', function(done) {
-    resolve('http', {}, function(err, path) {
-        assert.ifError(err);
-        assert.equal(path, 'http');
-        done();
-    });
+test('core shim not found', function() {
+    var path = resolve('http', {});
+    assert.equal(path, 'http');
 });
-
