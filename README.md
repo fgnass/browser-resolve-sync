@@ -16,7 +16,7 @@ Options:
 * paths - require.paths array to use if nothing is found on the normal node_modules recursive walk
 * packageFilter - transform the parsed package.json contents before looking at the "main" field
 * modules - object with module id/name -> path mappings to consult before doing manual resolution (use to provide core modules)
-
+* extensions - array of file extensions to search in order
 
 # License
 
